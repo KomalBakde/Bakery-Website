@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bakery</title>
+    <style>
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product {
+            flex-basis: calc(33.33% - 20px); 
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%; 
+        }
+
+        .welcome-section,.about-us {
+            position: relative;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+            font-size: x-large;
+            color: black; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center;
+            margin-bottom: 20px
+        }
+
+        .welcome-section::before{
+            background-image: url('img7.jpeg');
+            opacity: 0.7; 
+        }
+
+        .about-us::before{
+            background-image: url('img.jpg');
+            opacity: 0.3; 
+        }
+        
+        .welcome-section::before, .about-us::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            z-index: -1; 
+        }
+
+        .contact-section {
+            background-color: #fff;
+            text-align: center;
+            padding: 40px;
+            margin-top: 20px;
+            font-size: larger;
+        }
+
+        
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#menu-section">Menu</a></li>
+            <li><a href="#about-us-section">About Us</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div id="welcome-section" class="welcome-section">
+            <h1>Welcome to my Bakery</h1>
+        </div>
+
+        <div id="menu-section" class="product-container">
+            <div class="product">
+                <img src="img1.jpg" alt="Bakery Item">
+                <h2>Pastry</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="product">
+                <img src="img2.jpg" alt="Bakery Item">
+                <h2>Bread</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="product">
+                <img src="img3.jpg" alt="Bakery Item">
+                <h2>Cupcakes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <div id="menu-section" class="product-container">
+            <div class="product">
+                <img src="img4.jpg" alt="Bakery Item">
+                <h2>Cookies</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="product">
+                <img src="img5.jpg" alt="Bakery Item">
+                <h2>Muffin</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="product">
+                <img src="img6.jpg" alt="Bakery Item">
+                <h2>Cake</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <div id="about-us-section" class="about-us">
+            <h2>About Us</h2>
+            <p>Welcome to My Bakery, a haven where the art of baking is elevated to an exquisite experience. With a heritage spanning over a decade, our journey through the world of baking has been a labor of love, and we are delighted to share our passion with our beloved community.</p>
+            <p>At My Bakery, we are more than just a bakery; we are culinary artisans dedicated to creating moments of pure joy through our delectable creations. Every pastry, loaf of bread, and confection that emerges from our ovens is a testament to our unwavering commitment to quality and taste.</p>
+            <p>We take pride in sourcing only the finest ingredients, carefully selected for their flavor and freshness. Our time-tested recipes, passed down through generations, infuse each bite with a sense of tradition and nostalgia. When you indulge in our offerings, you're not just savoring food; you're savoring a piece of our history and heritage.</p>
+            <p>From the first golden rays of dawn to the quiet hours of the night, our ovens are constantly at work, ensuring that every bite is a symphony of flavor and texture. Whether you're drawn to the flakiness of our pastries, the comforting warmth of our bread, or the sweetness of our cakes and cupcakes, we have something to delight every palate.</p>
+        </div>
+        
+        <div id="contact-section" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to get in touch, feel free to contact us:</p>
+            <p><strong>Email:</strong> contact@mybakery.com</p>
+            <p><strong>Phone:</strong> +(91) 98******64</p>
+            <p><strong>Address:</strong> 123 Bakery Street, Nagpur, India</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2023 My Bakery | Follow Us:
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
